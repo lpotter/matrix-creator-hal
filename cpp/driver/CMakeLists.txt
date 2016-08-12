@@ -25,9 +25,9 @@ set(matrix_creator_hal_src
     wishbone_bus.cpp
 )
 
-add_library(matrix_creator_hal ${matrix_creator_hal_src})
+add_library(matrix_creator_hal SHARED ${matrix_creator_hal_src})
 set_property(TARGET matrix_creator_hal PROPERTY CXX_STANDARD 11)
-target_link_libraries(matrix_creator_hal ${CMAKE_THREAD_LIBS_INIT} ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(matrix_creator_hal ${CMAKE_THREAD_LIBS_INIT} ${CMAKE_THREAD_LIBS_INIT} wiringPi)
 
 install (TARGETS matrix_creator_hal DESTINATION lib)
 
