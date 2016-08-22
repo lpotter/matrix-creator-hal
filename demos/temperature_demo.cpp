@@ -39,7 +39,6 @@ int main() {
     std::cout << "humidity = " << humidity_data.humidity << "\t";
     std::cout << "temperature = " << humidity_data.temperature << std::endl;
     usleep(200000);
-  }
 
   return 0;
 }
