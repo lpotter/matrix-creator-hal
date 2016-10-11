@@ -67,11 +67,6 @@ target_link_libraries(gpio_demo matrix_creator_hal)
 target_link_libraries(gpio_demo ${CMAKE_THREAD_LIBS_INIT})
 target_link_libraries(gpio_demo wiringPi)
 
-add_executable(temperature_demo temperature_demo.cpp)
-set_property(TARGET temperature_demo PROPERTY CXX_STANDARD 11)
-target_link_libraries(temperature_demo matrix_creator_hal)
-target_link_libraries(temperature_demo ${CMAKE_THREAD_LIBS_INIT})
-
 add_executable(mic_energy mic_energy.cpp)
 set_property(TARGET mic_energy PROPERTY CXX_STANDARD 11)
 target_link_libraries(mic_energy matrix_creator_hal)
